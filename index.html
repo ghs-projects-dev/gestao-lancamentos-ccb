@@ -134,31 +134,31 @@ body{
     background:#059669;
 }
 
-/* RELATÓRIO */
-.report-section{
+/* RELATÓRIO E MATERIAL */
+.section{
     max-width:900px;
     margin:0 auto 100px auto;
     text-align:center;
 }
 
-.report-card{
+.section-card{
     background:white;
     padding:50px;
     border-radius:14px;
     box-shadow:0 12px 35px rgba(0,0,0,0.06);
 }
 
-.report-card h2{
+.section-card h2{
     margin-bottom:20px;
     font-size:22px;
 }
 
-.report-card p{
+.section-card p{
     margin-bottom:25px;
     color:#64748b;
 }
 
-.btn-report{
+.btn-dark{
     display:inline-block;
     padding:14px 28px;
     font-size:15px;
@@ -168,10 +168,9 @@ body{
     color:white;
     text-decoration:none;
     transition:0.2s;
-    margin:10px 5px 0 5px;
 }
 
-.btn-report:hover{
+.btn-dark:hover{
     background:#1e293b;
 }
 
@@ -215,7 +214,8 @@ footer strong{
     <div class="logo">Gestão de Lançamentos</div>
     <div class="nav-links">
         <a href="#">Início</a>
-        <a href="#">Relatórios</a>
+        <a href="#relatorios">Relatórios</a>
+        <a href="#material">Material de Apoio</a>
     </div>
 </div>
 
@@ -226,7 +226,6 @@ footer strong{
     </div>
 </section>
 
-<!-- LANÇAMENTOS + PLANILHAS -->
 <div class="action-section">
     <div class="action-groups">
 
@@ -253,20 +252,25 @@ footer strong{
     </div>
 </div>
 
-<!-- RELATÓRIO ABAIXO -->
-<section class="report-section">
-    <div class="report-card">
+<!-- RELATÓRIOS -->
+<section id="relatorios" class="section">
+    <div class="section-card">
         <h2>Relatórios Administrativos</h2>
         <p>Acesse os dados consolidados e análises detalhadas.</p>
+        <a href="#" class="btn-dark">Acessar Relatório</a>
+    </div>
+</section>
 
-        <a href="#" class="btn-report">Acessar Relatório</a>
-
+<!-- MATERIAL DE APOIO -->
+<section id="material" class="section">
+    <div class="section-card">
+        <h2>Material de Apoio</h2>
+        <p>Documentos, orientações e arquivos complementares.</p>
         <a href="https://drive.google.com/drive/folders/1WLPliV51TZP5QgsYLG_06YMK9D-LVj_t?usp=drive_link" 
            target="_blank" 
-           class="btn-report">
-           Material de Apoio
+           class="btn-dark">
+           Acessar Material
         </a>
-
     </div>
 </section>
 
